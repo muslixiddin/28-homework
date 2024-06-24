@@ -1,0 +1,100 @@
+.contact-section {
+    padding: 0 0 50px 0;
+    background: rgb(31, 46, 53);
+
+    .contact-section-wrapper {
+        .contact-title-text {
+            .contact-title {
+                color: rgb(255, 255, 255);
+                font-size: 34px;
+                font-weight: 700;
+                line-height: 57px;
+                letter-spacing: 0.2px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 27px;
+            }
+
+            .contact-text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(255, 255, 255);
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+                letter-spacing: 0.2px;
+                text-align: center;
+                margin-bottom: 55px;
+            }
+        }
+
+        .contact-social-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 66px;
+
+            .contact-social-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: rgb(237, 255, 252);
+                list-style: none;
+
+                &:hover {
+                    background-color: rgb(182, 255, 243);
+                }
+
+                a {
+                    text-decoration: none;
+
+                }
+            }
+        }
+
+        .contact-img {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+@media screen and (max-width:955px) {
+    .contact-section {
+        .contact-section-wrapper {
+            .contact-title-text {
+                .contact-title {
+                    margin-bottom: 20px;
+                }
+
+                .contact-text {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+
+            .contact-social-list {
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            .contact-img {
+                margin: 0 auto;
+
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

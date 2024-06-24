@@ -1,0 +1,318 @@
+.site-footer {
+    background-color: rgb(31, 46, 53);
+    padding: 0 0 24px 0;
+
+    .footer-wrapper {
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 81px;
+
+        .footer-logo-social-list-wrapper {
+            display: flex;
+            gap: 161px;
+
+            .footer-logo-social {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                .footer-logo {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    a {
+                        text-decoration: none;
+
+                        .footer-logo-text {
+                            color: #fff;
+                            font-size: 30px;
+                            font-weight: 700;
+                            line-height: 28px;
+                        }
+                    }
+                }
+
+                .footer-social-list {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    .footer-social-item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: rgb(237, 255, 252);
+                        list-style: none;
+
+                        &:hover {
+                            background-color: rgb(182, 255, 243);
+                        }
+
+                        a {
+                            text-decoration: none;
+
+                        }
+                    }
+                }
+            }
+
+            .footer-list-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 153px;
+
+                .footer-list {
+
+                    .footer-item-title {
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        list-style: none;
+                        margin-bottom: 24px;
+                    }
+
+                    .footer-item {
+                        margin-bottom: 16px;
+                        list-style: none;
+
+                        a {
+                            color: #fff;
+                            font-size: 16px;
+                            font-weight: 400;
+                            text-decoration: none;
+                            padding-bottom: 4px;
+                            border-bottom: 1px solid rgb(2, 18, 32);
+                            ;
+                            transition: 0.15s linear;
+
+                            &:hover {
+                                color: #fff;
+                                border-bottom: 1px solid #fff;
+                            }
+
+                            &:active {
+                                color: rgb(39, 90, 135);
+                                border-bottom: 1px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-form-wrapper {
+
+            .form-title {
+                width: 260px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30px;
+                margin-bottom: 34px;
+            }
+
+            form {
+                width: 325px;
+
+                label {
+                    .input-name {
+                        color: rgb(34, 52, 61);
+                        width: 325px;
+                        border: none;
+                        box-sizing: border-box;
+                        border: 1px solid rgb(188, 208, 229);
+                        border-radius: 4px;
+                        background: rgb(255, 255, 255);
+                        padding: 10px 15px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        margin-bottom: 21px;
+                    }
+
+                    ::placeholder {
+                        color: rgb(188, 208, 229);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 28px;
+                    }
+
+                    .footer-signup-btn {
+                        width: 131px;
+                        padding: 7px 15px;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        background: transparent;
+                        cursor: pointer;
+                        border: 1px solid rgb(188, 208, 229);
+                        border-radius: 4px;
+                        background-color: inherit;
+                        color: #fff;
+                        transition: 0.15s linear;
+
+                        &:hover {
+                            color: white;
+                            border: 1px solid rgb(2, 137, 122);
+                            ;
+                            border-radius: 4px;
+                            background: rgb(2, 137, 122);
+                        }
+
+                        &:active {
+                            color: rgb(203, 231, 228);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .site-footer {
+        padding: 0 0 50px 0;
+
+        .footer-wrapper {
+            padding-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            gap: 30px;
+
+            .footer-logo-social-list-wrapper {
+                gap: 140px;
+                width: 100%;
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+
+                .footer-logo-social {}
+
+                .footer-list-wrapper {
+                    width: 50%;
+                    gap: 200px;
+                    display: flex;
+                    align-items: center;
+                    margin: 0 auto;
+
+                    .footer-list {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            .footer-form-wrapper {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+
+                .form-title {
+                    text-align: center;
+                }
+
+                form {
+                    width: 325px;
+
+
+                    label {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        .footer-signup-btn {}
+                    }
+                }
+            }
+        }
+
+        .footer-bottom-text {}
+    }
+}
+
+
+@media screen and (max-width:950px) {
+    .site-footer {
+        padding: 0 0 50px 0;
+
+        .footer-wrapper {
+            padding-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            gap: 30px;
+
+            .footer-logo-social-list-wrapper {
+                width: 100%;
+                align-items: center;
+                gap: 30px;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+                .footer-logo-social {}
+
+                .footer-list-wrapper {
+                    margin: 0 auto;
+                    gap: 40px;
+                    flex-wrap: wrap;
+
+                    .footer-list {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            .footer-form-wrapper {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+
+                .form-title {
+                    text-align: center;
+                }
+
+                form {
+                    width: 325px;
+
+
+                    label {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        .footer-signup-btn {}
+                    }
+                }
+            }
+        }
+
+        .footer-bottom-text {}
+    }
+}

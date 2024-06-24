@@ -1,0 +1,116 @@
+.story-section {
+    padding: 113px 0 218px;
+    background-color: rgb(31, 46, 53);
+
+    .story-section-wrapper {
+        .story-title-text {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 32px;
+
+            .story-title {
+                color: rgb(255, 255, 255);
+                font-size: 34px;
+                font-weight: 700;
+                line-height: 51px;
+                margin-bottom: 8px;
+
+            }
+
+            .story-text {
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26px;
+            }
+        }
+
+        .story-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 32px;
+
+            .story-card {
+                border-radius: 8px;
+                background: rgb(255, 255, 255);
+                overflow: hidden;
+
+                img {
+                    width: 348px;
+                    height: 187px;
+                }
+
+                .story-card-content {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 22px 24px 40px 24px;
+
+                    .story-card-info {
+                        color: rgb(34, 52, 61);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 28px;
+                    }
+
+                    .story-card-text {
+                        width: 294px;
+                        color: rgb(34, 52, 61);
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:860px) {
+    .story-section {
+
+        .story-section-wrapper {
+            .story-cards {
+
+                .story-card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:540px) {
+    .story-section {
+        padding: 50px 0 78px;
+
+        .story-section-wrapper {
+            .story-title-text {
+                .story-text {
+                    text-align: center;
+                }
+            }
+
+            .story-cards {
+                .story-card {
+                    width: 100%;
+
+                    .story-card-content {
+                        .story-card-text {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
